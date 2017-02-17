@@ -9,7 +9,14 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-// var myPost = require('./routes/myPost');
+var myPost = require('./routes/myPost');
+var newPost = require('./routes/newPost');
+var history = require('./routes/history');
+var browse = require('./routes/browse');
+var match = require('./routes/match');
+var profile = require('./routes/profile');
+var settings = require('./routes/settings');
+
 // var match = require('./routes/match');
 // Example route
 // var user = require('./routes/user');
@@ -38,13 +45,14 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/browse', index.view);
-app.get('/match', index.view);
-app.get('/history', index.view);
-app.get('/myPost', index.view);
-app.get('/browse', index.view);
-app.get('/profile', index.view);
-app.get('/settings', index.view);
+app.get('/index', index.view);
+app.get('/browse', browse.view);
+app.get('/match', match.view);
+app.get('/history', history.view);
+app.get('/myPost', myPost.view);
+app.get('/newPost', newPost.view);
+app.get('/profile', profile.view);
+app.get('/settings', settings.view);
 // Example route
 // app.get('/users', user.list);
 

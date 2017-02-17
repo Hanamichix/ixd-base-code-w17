@@ -1,23 +1,117 @@
 {
 	"accounts": [
 		{
-			"userid" : 001,
+			"userid" : 1,
 			"name": "Doug Engelbart",
-			"posts": [0001, 0002],
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"posts": [1, 2],
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_28.jpg/972px-Douglas_Engelbart_in_28.jpg"			
 		},
 		{
-			"userid" : 002,
+			"userid" : 2,
 			"name": "Ivan Sutherland",
-			"posts": [0003, 0004],
+			"posts": [3, 4],
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
 		},
 		{
-			"userid" : 003,
+			"userid" : 3,
 			"name": "Lucy Suchman",
-			"posts": [0005, 0006],
+			"posts": [5, 6],
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"			
 		}
+	],
+	"items": [
+		{
+			"itemid": 1,
+			"name": "pencil",
+			"description": "a pencil",
+			"owner": 1,
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_28.jpg/972px-Douglas_Engelbart_in_28.jpg",	
+			"interested": [
+				{
+					"userid": 2,
+					"tradewith": 2
+
+				},
+				{
+					"userid": 3,
+					"tradewith": 3
+				}
+			]		
+		},
+		{
+			"itemid": 2,
+			"name": "football",
+			"description": "a football",
+			"owner": 2,
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"interested": [
+				{
+					"userid": 1,
+					"tradewith": 1
+				}
+			]			
+		},
+		{
+			"itemid": 3,
+			"name": "bag",
+			"description": "a bag",
+			"owner": 3,
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg",
+			"interested": [
+				{
+					"userid": 1,
+					"tradewith": 1
+				},
+				{
+					"userid": 2,
+					"tradewith": 4
+				}
+
+			]			
+		},
+		{
+			"itemid": 4,
+			"name": "box",
+			"description": "a box",
+			"owner": 2,
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
+			"interested": [
+				{
+					"userid": null,
+					"tradewith": null
+				}
+			]			
+
+
+		},
+		{
+			"itemid": 5,
+			"name": "sharpie",
+			"description": "a sharpie",
+			"owner": 1,
+			"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB212q625.jpg",
+			"interested": [
+				{
+					"userid": 3,
+					"tradewith": 3
+				}
+			]
+
+		},
+		{
+			"itemid": 6,
+			"name": "bike",
+			"description": "a bike",
+			"owner": 3,
+			"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg",
+			"interested": [
+				{
+					"userid": null,
+					"tradewith": null
+				}
+			]		
+
+		}
 	]
-	
+
 }
