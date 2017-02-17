@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Log In</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/login.js"></script>
+
+
+</head>
+
+<body>
+	<div class="container">
+		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+		<!-- 
+		<form id="logInForm" role="form" method="get" action="/index">
+			<h3>Login</h3>
+	    	<div class="form-group">
+	      		<label for="name">User Name</label>
+	      		<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+	    	</div>
+	    	<div class="form-group">
+	      		<label for="description">Password</label>
+	      		<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+	    	</div>
+	    	<button type="submit" id="login" class="btn btn-default" value="Submit"></button>
+		</form>
+		-->
+			<form id="addFriendForm" role="form" method="get" action="/login/logininfo">
+
+		<h3>Add a friend</h3>
+	    <div class="form-group">
+	      <label for="name">Name:</label>
+	      <input type="text" class="form-control" id="username" placeholder="Name" name="name">
+	    </div>
+	    <div class="form-group">
+	      <label for="description">Description:</label>
+	      <input type="text" class="form-control" id="password" placeholder="Password" name="password">
+	    </div>
+	    <input type="submit" id="loginbutton" class="btn btn-default" value="Add the friend"></input>
+	</form>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

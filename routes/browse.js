@@ -1,8 +1,8 @@
-
-/*
- * GET home page.
- */
-
+'use strict';
+var data = require("../data.json");
 exports.view = function(req, res){
-  res.render('browse');
+	console.log(data);
+  res.render('browse', data);
+
 };
+

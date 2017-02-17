@@ -16,6 +16,11 @@ var browse = require('./routes/browse');
 var match = require('./routes/match');
 var profile = require('./routes/profile');
 var settings = require('./routes/settings');
+var logininfo = require('./routes/logininfo');
+var login = require('./routes/login');
+var browselist = require('./routes/browselist');
+
+
 
 // var match = require('./routes/match');
 // Example route
@@ -47,12 +52,15 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/index', index.view);
 app.get('/browse', browse.view);
+app.get('/login', login.view);
 app.get('/match', match.view);
 app.get('/history', history.view);
 app.get('/myPost', myPost.view);
 app.get('/newPost', newPost.view);
 app.get('/profile', profile.view);
 app.get('/settings', settings.view);
+app.get('/login/logininfo', logininfo.getLoginData);
+app.get('/browse/browselist', browselist.getItemData);
 // Example route
 // app.get('/users', user.list);
 
