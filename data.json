@@ -4,19 +4,20 @@
 			"userid" : 1,
 			"name": "Doug Engelbart",
 			"posts": [1, 2],
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_28.jpg/972px-Douglas_Engelbart_in_28.jpg"			
+			"contact": 12345
+	
 		},
 		{
 			"userid" : 2,
 			"name": "Ivan Sutherland",
 			"posts": [3, 4],
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"contact": 12345		
 		},
 		{
 			"userid" : 3,
 			"name": "Lucy Suchman",
 			"posts": [5, 6],
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"			
+			"contact": 12345
 		}
 	],
 	"items": [
@@ -25,7 +26,7 @@
 			"name": "pencil",
 			"description": "a pencil",
 			"owner": 1,
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_28.jpg/972px-Douglas_Engelbart_in_28.jpg",	
+			"imageURL": "http://lorempixel.com/400/400/people",	
 			"interested": [
 				{
 					"userid": 2,
